@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t dpalica/docker-react -f Dockerfile.dev .
+  - docker build -t dwp32/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true dpalica/docker-react npm run test
+  - docker run -e CI=true dwp32/docker-react npm run test
